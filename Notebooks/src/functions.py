@@ -1,3 +1,5 @@
+
+
 def plot_correlation_circle(pca, components=(1,2), feature_names=None):
     """
     Plots the correlation circle for the specified PCA components.
@@ -7,6 +9,7 @@ def plot_correlation_circle(pca, components=(1,2), feature_names=None):
     - components: Tuple of two integers specifying which components to plot (1-indexed)
     - feature_names: List of feature names corresponding to the PCA input data
     """
+import pandas as pd
 
     #assign default feature names if none provided
     if feature_names is None:
